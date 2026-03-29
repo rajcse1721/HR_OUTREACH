@@ -6,6 +6,7 @@ const app = express();
 app.use(
   cors({
     origin: "https://rajcse1721.github.io",
+    origin: "https://rajcse1721.github.io"
   }),
 );
 app.use(express.json({ limit: "50mb" }));
