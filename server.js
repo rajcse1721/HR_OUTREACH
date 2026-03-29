@@ -3,7 +3,11 @@ import nodemailer from "nodemailer";
 import cors from "cors";
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://rajcse1721.github.io",
+  }),
+);
 app.use(express.json({ limit: "50mb" }));
 
 import "dotenv/config";

@@ -217,7 +217,7 @@ export function useOutreach() {
     const pendingSnapshot = contacts.filter((c) => c.status !== "sent");
 
     if (!pendingSnapshot.length) {
-      isSendingRef.current = false;
+      sendingRef.current = false;
       setIsSending(false);
       return;
     }
