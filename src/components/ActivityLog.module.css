@@ -1,0 +1,40 @@
+.wrap {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  padding: 16px;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.8;
+  min-height: 320px;
+  overflow-y: auto;
+}
+
+.empty {
+  color: var(--text2);
+  font-style: italic;
+}
+
+.line {
+  display: flex;
+  gap: 8px;
+}
+.time {
+  color: var(--text2);
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+.info {
+  color: var(--accent);
+}
+.success {
+  color: var(--green);
+}
+.error {
+  color: var(--red);
+}
+.warn {
+  color: var(--amber);
+}

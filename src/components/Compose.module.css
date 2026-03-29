@@ -1,0 +1,83 @@
+.compose {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.field label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.subject {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 11px 13px;
+  border-radius: var(--r);
+  outline: none;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+.subject:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-light);
+}
+
+.tokenBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: center;
+}
+.tokenLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text2);
+  margin-right: 4px;
+}
+.token {
+  background: var(--accent-light);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 11px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s;
+  user-select: none;
+}
+.token:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.body {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 13px;
+  border-radius: var(--r);
+  outline: none;
+  resize: vertical;
+  line-height: 1.7;
+  width: 100%;
+  transition: all 0.2s ease;
+  min-height: 320px;
+}
+.body:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-light);
+}

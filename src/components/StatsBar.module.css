@@ -1,0 +1,50 @@
+.bar {
+  display: flex;
+  border-radius: 12px 12px 0 0;
+  background: var(--s1);
+  border: 1px solid var(--border2);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.stat {
+  flex: 1;
+  padding: 18px 24px;
+  border-right: 1px solid var(--border);
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.03);
+}
+.stat:last-child {
+  border-right: none;
+}
+
+.num {
+  font-family: system-ui;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text2);
+}
+
+.accent {
+  color: var(--accent);
+}
+.teal {
+  color: var(--green);
+}
+.red {
+  color: var(--red);
+}
+.amber {
+  color: var(--amber);
+}
